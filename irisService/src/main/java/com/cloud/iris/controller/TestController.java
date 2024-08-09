@@ -3,6 +3,7 @@ package com.cloud.iris.controller;
  *  Created by cles on 2021/7/3 19:59
  */
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("test")
 public class TestController {
 
-    @PostMapping("index")
+    @GetMapping("index")
     public String index(){
 
         System.err.println("已经调用到");

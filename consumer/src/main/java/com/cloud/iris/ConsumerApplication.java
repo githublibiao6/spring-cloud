@@ -1,4 +1,4 @@
-package springcloud.helloworld.consume;
+package com.cloud.iris;
 
 
 import org.springframework.boot.SpringApplication;

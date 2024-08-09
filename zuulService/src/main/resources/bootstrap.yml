@@ -2,26 +2,26 @@ server:
   port: 9996
 spring:
   application:
-    name: crawler-zuul
-  redis:
-    host: localhost
-    port: 6379
-    password: 123456
+    name: zuul
+#  redis:
+#    host: localhost
+#    port: 6379
+#    password: 123456
 
 zuul:
   routes:
-    feign-auth:
-      path: /auth/**
-      serviceId: crawler-auth
-      strip-prefix: true
-      custom-sensitive-headers: true
-    feign-user:
-      path: /user/**
-      serviceId: crawler-goddess
-      sensitiveHeaders:
-    consumer: # 路由
-      path: /**
-      serviceId: crawler-consumer # 服务名称
+#    feign-auth:
+#      path: /auth/**
+#      serviceId: crawler-auth
+#      strip-prefix: true
+#      custom-sensitive-headers: true
+#    feign-user:
+#      path: /user/**
+#      serviceId: crawler-goddess
+#      sensitiveHeaders:
+    route1: # 路由
+      path: /iris/**
+      serviceId: iris-service # 服务名称
       sensitiveHeaders:
 
 eureka:

@@ -1,11 +1,11 @@
-package springcloud.helloworld.consume.service;
+package com.cloud.iris.service;
 /*
  *  Created by cles on 2021/7/3 19:48
  */
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import springcloud.helloworld.consume.client.ProduceClient;
+import com.cloud.iris.client.ProduceClient;
 
 /**
  * @author cles

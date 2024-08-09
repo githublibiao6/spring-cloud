@@ -1,4 +1,4 @@
-package springcloud.helloworld.config.client;
+package com.cloud.iris;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;

@@ -1,4 +1,4 @@
-package springcloud.helloworld.consume.client;
+package com.cloud.iris.client;
 /*
  *  Created by cles on 2021/7/3 19:51
  */
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
  * @Date 2021/7/3 19:51
  * @version: 1.0.0
  */
-@FeignClient("service-helloworld")
+@FeignClient("iris-service")
 public interface ProduceClient {
 
     /**
